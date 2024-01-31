@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href= "https://fonts.googleapis.com/icon?family=Material+Icons" /> 
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <style>
+     
+
+ body{
+  background-image:url(WhatsApp\ Image\ 2024-01-30\ at\ 11.36.26\ AM\ \(1\).jpeg);
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  /* Hide the element with class "desktop-view" on mobile */
+  .desktop-view {
+    display: none;
+  }
+
+  /* Show the element with class "mobile-view" on mobile */
+  .mobile-view {
+    display: block;
+  }
+ 
+  
+  /* Add other mobile-specific styles */
+.mobile-view{
+    /* height: 100vh; */
+    background-image:url(WhatsApp\ Image\ 2024-01-30\ at\ 11.36.26\ AM\ \(1\).jpeg);
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+ border-top: 5px;
+ border-top: #ff7300;
+ 
+
+    /* background-color: #000000; */
+}
+.launch{
+  color: #fff;
+  margin: 10px ;
+
+}
+
+
+.hr{
+	height:5px;
+	margin:0px 0 15px 0;
+	background-color:#fff;
+}
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+
+
+
+
+.imgsd{
+
+    
+    height: 200px;
+    width: 300px;
+}
+.imgsm{
+ 
+    display: flex;
+    justify-content: center;
+}
+
+
+.group1{
+    display: flex;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: Raleway, sans-serif;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* min-height: 100vh; */
+}
+
+.screen {
+   background: linear-gradient(90deg, #504f5063, #7c78b850);
+   position: relative;
+   height: 450px;
+   width: 360px;
+   box-shadow: 0px 0px 20px #ffffff;
+   
+}
+
+.screen__content {
+   z-index: 1;
+   position: relative;
+   height: 100%;
+}
+
+.screen__background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 0;
+   -webkit-clip-path: inset(0 0 0 0);
+   clip-path: inset(0 0 0 0);
+}
+
+.screen_background_shape {
+   transform: rotate(45deg);
+   position: absolute;
+}
+
+.screen_background_shape1 {
+   height: 520px;
+   width: 520px;
+   background: #FFF;
+   top: -50px;
+   right: 120px;
+   border-radius: 0 72px 0 0;
+}
+
+.screen_background_shape2 {
+   height: 220px;
+   width: 220px;
+   background: #6C63AC;
+   top: -172px;
+   right: 0;
+   border-radius: 32px;
+}
+
+.screen_background_shape3 {
+   height: 540px;
+   width: 190px;
+   background: linear-gradient(270deg, #5D54A4, #6A679E);
+   top: -24px;
+   right: 0;
+   border-radius: 32px;
+}
+
+.screen_background_shape4 {
+   height: 400px;
+   width: 200px;
+   background: #7E7BB9;
+   top: 420px;
+   right: 50px;
+   border-radius: 60px;
+}
+
+.login {
+   width: 320px;
+   padding: 30px;
+   padding-top: 50px;
+}
+
+.login__field {
+   padding: 20px 0px;
+   position: relative;
+}
+
+.login__input {
+   border: none;
+   border-bottom: 2px solid #D1D1D4;
+   background: none;
+   padding: 10px;
+   padding-left: 24px;
+   font-weight: 700;
+   width: 75%;
+   transition: .2s;
+   margin-top: -50px;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+   outline: none;
+   border-bottom-color: #6A679E;
+}
+
+.login__submit {
+   background: #fff;
+   font-size: 14px;
+   margin-top: 30px;
+   padding: 16px 20px;
+   border-radius: 26px;
+   border: 1px solid #D4D3E8;
+   text-transform: uppercase;
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   color: #4C489D;
+   box-shadow: 0px 2px 2px #fafafa;
+   cursor: pointer;
+   transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+   border-color: #6A679E;
+   outline: none;
+}
+
+
+.login__icon {
+   position: absolute;
+   top: 24px;
+   color: #ffffff;
+}
+
+.social-login {
+   position: absolute;
+   height: 140px;
+   width: 250px;
+   /* text-align: center; */
+   bottom: 0px;
+  margin: 0px 5px 0px 40px;
+   color: #fff;
+}
+::placeholder{
+   color: white;
+}
+}
+  
+
+
+/* Styles for larger screens (e.g., tablets, desktops) */
+@media only screen and (min-width: 768px) {
+  /* Hide the element with class "mobile-view" on desktop */
+  .mobile-view {
+    display: none;
+  }
+
+  /* Show the element with class "desktop-view" on desktop */
+  .desktop-view {
+    display: block;
+  }
+ body{
+        
+  background-image:url(back-4\ \(3\).png);
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: 1700px 1100px;
+
+	/* color:#6a6f8c; */
+	
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+
+
+
+
+.logoimg{
+  float: right;
+  margin: 80px 90px 0px 0px;
+  width: 340px;
+  height: 200px;
+}
+.group1{
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+    color: #fff;
+    margin-top: 70px;
+    text-align: center;
+}
+p{
+   color: #ff7300;
+    text-align: center;
+}
+
+.login-box{
+	width:100%;
+	margin:180px 0px 0px 150px;
+    
+	max-width:425px;
+	min-height:470px;
+	position:relative;
+  background: linear-gradient(90deg, #504f5063, #7c78b850);
+	box-shadow:0 18px 19px 0 rgba(255, 255, 255, 0.24),0 258px 70px 0 rgba(253, 253, 253, 0.19);
+}
+
+.login-snip{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:40px 40px 0px 40px;
+	/* background:rgba(73, 73, 73, 0.9); */
+}
+.login-snip .login,
+.login-snip .sign-up-form{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-snip .sign-in,
+.login-snip .sign-up,
+.login-space .group .check{
+	display:none;
+}
+.login-snip .tab,
+.login-space .group .label,
+.login-space .group .button{
+	text-transform:uppercase;
+}
+.login-snip .tab{
+ 
+	font-size:13px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:3px solid transparent;
+}
+.login-snip .sign-in:checked + .tab,
+.login-snip .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#ffffff25;
+}
+.login-space{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-space .group{
+	margin-bottom:15px;
+}
+.login-space .group .label,
+.login-space .group .input,
+.login-space .group .button{
+	width:100%;
+	color:#f8f7f7;
+	display:block;
+}
+.login-space .group .input,
+.login-space .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-space .group input[data-type="password"]{
+	/* text-security:circle; */
+	-webkit-text-security:circle;
+}
+.login-space .group .label{
+	color:#ffffff;
+	font-size:12px;
+}
+.login-space .group .button{
+	background:#ffffff;
+}
+.login-space .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255, 255, 255, 0.1);
+}
+.login-space .group label .icon:before,
+.login-space .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-space .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-space .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-space .group .check:checked + label{
+	color:#fff;
+}
+.login-space .group .check:checked + label .icon{
+	background:#1161ee;
+}
+.login-space .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-space .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-snip .sign-in:checked + .tab + .sign-up + .tab + .login-space .login{
+	transform:rotate(0);
+}
+.login-snip .sign-up:checked + .tab + .login-space .sign-up-form{
+	transform:rotate(0);
+}
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+
+.hr{
+	height:5px;
+	margin:10px 0 0px 0;
+	background-color:#fff;
+}
+
+.logoimg{
+  float: right;
+  margin: -150px 90px 0px 0px;
+  width: 340px;
+  height: 200px;
+}
+
+.group2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.context{
+ color:beige;
+ margin: 20px 10px 0px 0px;
+}
+.emailtext{
+  margin: 20px 0px 0px 20px;
+ float: right;
+ color: beige;
+}
+
+
+/* Made with love by Mutiullah Samim*/
+.btn{
+  color: #03e9f4;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+
+
+
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+
+  
+      <div class="desktop-view">
+       
+   <div >
+    <img  class="logoimg" src="NYSTAI LOGO TRANSPAPART  1024-1024 WBG COLOR.png" alt="">
+   </div>
+ <div class="login-box">
+     <div class="login-snip">
+       
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab"> GET IN TOUCH!!! 
+         
+         </label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+        <div class="login-space">
+            <form name="submit-to-google-sheet">
+            <div class="login">
+                <div class="group m-3">
+                    <label for="user" class="label m-2"><i class="fa fa-envelope "  style="margin-bottom: 8px;"></i>&nbsp;&nbsp; E-MAIL</label>
+                    <input
+                   
+                    name="email"
+                    type="email"
+                    class=" form-control input"
+                  
+                    required
+                  />
+                    <!-- <input id="user" type="text" class="input"  placeholder="Enter your e-mail " required> -->
+                </div>
+                <div class="group m-3">
+                    <label for="pass" class="label m-2"><i class="fa fa-phone "  style="margin-bottom: 8px;"></i>&nbsp;&nbsp;MOBILE NUMBER</label>
+                    <input
+                  
+                    name="MobileNumber"
+                    type="tel"
+                    class=" form-control input"
+                   
+                    required
+                  />
+                    <!-- <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your mobile number" required> -->
+                </div>
+              
+                <div class="group1 login-box1">
+                    <input type="hidden" name="formId" value="form1" />
+                
+              
+                    <a href="#">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <button type="submit" class="btn" onclick="thank()">
+                      <label for="tab-2">Sent</label></button>
+                    </a>
+           
+
+
+                   
+                </div>
+                <hr class="hr">
+                
+                <div class="group2 ">
+                <div >
+
+              
+                  <p class="context ">  <i class="fa fa-phone "  style="margin-bottom: 8px;"></i><br>
+                         <span class="spanno"> 81899 77700</span>
+                  </p>
+                  
+              </div>
+              <hr>
+              <div>
+                <p class="emailtext">
+                  <i class="fa fa-envelope " style="margin-bottom: 8px;"></i><br>
+                  info@adhiba.outlook.com
+                </p>
+              </div>
+          </div>
+               
+            </div>
+             
+          
+           
+            <div class="sign-up-form">
+                <h1 >THANK YOU!!!!</h1>
+                <P>Your e-mail is added to the list</P>
+                
+                
+            </div>
+           
+            </form>
+        </div>
+    </div>
+</div>
+
+ </div>
+
+
+
+
+
+
+
+<div class="mobile-view">
+
+   
+     
+ 
+                   
+   <div class="imgsm mt-5">
+    <img src="NYSTAI LOGO TRANSPAPART  1024-1024 WBG COLOR.png" class="imgsd ">
+   
+   
+        </div>
+        <h3 class="launch text-center" >We are still working on stuff <br>
+          and will let you know<br> 
+          when our website launches... </h3>
+        <div class=" container">
+ 
+          <div class="screen mt-3">
+             <div class="login-box screen__content">
+
+
+              <form name="submit-to-google-sheet2" class="login">
+        
+                <div class="headin">
+                  <h6 style="color: #fff ; text-align: center;">GET IN TOUCH!!!</h6>
+                </div>
+                
+               <div class="login__field">
+               <i class="login__icon fa fa-envelope"></i>
+                  <input
+                    name="MobileNumber"
+                    type="tel"
+                    class="  login__input"
+                    placeholder="Mobile Number"
+                    required
+                  />
+                </div>
+
+
+
+                <div class="login__field">
+                  <i class="login__icon fa fa-phone"></i>
+                  <input
+                    name="email"
+                    type="email"
+                    class=" input login__input"
+                    placeholder="Email"
+                    required
+                  />
+             </div>
+
+
+               <div class="button login-box ">
+                <input type="hidden" name="formId2" value="form2" />
+                <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <button class="btn" onclick="thank2() " style="color: #03e9f4;">Send</button>
+                </a>
+               </div>
+              
+             
+               
+              
+              </form>
+
+
+              <div class="social-login" >
+                  <hr class="hr">
+                   <div class="social-icons">
+
+                    <label for="tab-1" class="tab mt-4"> 
+                      <i class="fa fa-envelope " style="margin:10px 5px;"></i>
+                      info@adhiba.outlook.com
+                    </label>
+                    <label for="tab-1" class="tab"> 
+                      <i class="fa fa-phone " style="margin:10px 5px;"></i>
+                      81899 77700
+                    </label>
+                      
+
+
+                    
+                     
+                   </div>
+                </div>
+             </div>
+          
+          </div>
+       </div>
+      
+      </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+     function thank2(){
+        var scriptURL =
+             "https://script.google.com/macros/s/AKfycbz-75HeXg_NbSnVb69tmJn2Ryfu1BTgpY_CO22uqzuGj-y7MwGBkaPdTTJqvoDEHGXi8w/exec";
+
+        var form = document.forms["submit-to-google-sheet2"];
+
+        // Add event listener to the form
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            // Set the formId value based on the form being submitted
+            form.querySelector('input[name="formId2"]').value = "form2";
+
+            // Send the form data to the Google Apps Script
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then((response) => console.log("Success!", response))
+                .catch((error) => console.error("Error!", error.message));
+        });
+      }
+
+        function thank(){
+        var scriptURL =
+             "https://script.google.com/macros/s/AKfycbz-75HeXg_NbSnVb69tmJn2Ryfu1BTgpY_CO22uqzuGj-y7MwGBkaPdTTJqvoDEHGXi8w/exec";
+
+        var form = document.forms["submit-to-google-sheet"];
+
+        // Add event listener to the form
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            // Set the formId value based on the form being submitted
+            form.querySelector('input[name="formId"]').value = "form1";
+
+            // Send the form data to the Google Apps Script
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then((response) => console.log("Success!", response))
+                .catch((error) => console.error("Error!", error.message));
+        });
+
+
+      }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+    
