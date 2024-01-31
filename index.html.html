@@ -20,6 +20,7 @@
  background-attachment: fixed;
  background-repeat: no-repeat;
  background-size: cover;
+ /* font-family: "segoe print"; */
 }
 
 
@@ -56,7 +57,9 @@
 
 }
 
-
+.login__input::-webkit-input-placeholder{
+  font-family: segoe print
+}
 .hr{
 	height:5px;
 	margin:0px 0 15px 0;
@@ -187,14 +190,7 @@
 .group1{
     display: flex;
 }
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
-* {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: Raleway, sans-serif;
-}
 
 .container {
    display: flex;
@@ -272,8 +268,8 @@
 
 .login {
    width: 320px;
-   padding: 30px;
-   padding-top: 50px;
+   padding: 20px;
+   padding-top: 30px;
 }
 
 .login__field {
@@ -331,7 +327,9 @@
    top: 24px;
    color: #ffffff;
 }
-
+::-ms-input-placeholder{
+  color: #03e9f4;
+}
 .social-login {
    position: absolute;
    height: 140px;
@@ -341,9 +339,15 @@
   margin: 0px 5px 0px 40px;
    color: #fff;
 }
+input{
+  color: #f8f7f7;
+ font-family: "segoe print;"
+}
 ::placeholder{
    color: white;
+  font-family:"segoe print;"
 }
+
 }
   
 
@@ -361,7 +365,7 @@
   }
  body{
         
-  background-image:url(back-4\ \(3\).png);
+  background-image:url(back-4\ \(9\).png);
  background-attachment: fixed;
  background-repeat: no-repeat;
  background-size: 1700px 1100px;
@@ -373,11 +377,13 @@
 
 
 
-
+::placeholder{
+   color: white;
+}
 
 .logoimg{
-  float: right;
-  margin: 80px 90px 0px 0px;
+ 
+  margin: 17px 0px 0px 200px;
   width: 340px;
   height: 200px;
 }
@@ -394,16 +400,16 @@ h1{
     text-align: center;
 }
 p{
-   color: #ff7300;
+   color: #ffffff;
     text-align: center;
 }
 
 .login-box{
 	width:100%;
-	margin:180px 0px 0px 150px;
+	margin:30px 0px 0px 160px;
     
 	max-width:425px;
-	min-height:470px;
+	min-height:540px;
 	position:relative;
   background: linear-gradient(90deg, #504f5063, #7c78b850);
 	box-shadow:0 18px 19px 0 rgba(255, 255, 255, 0.24),0 258px 70px 0 rgba(253, 253, 253, 0.19);
@@ -544,12 +550,7 @@ a{color:inherit;text-decoration:none}
 	background-color:#fff;
 }
 
-.logoimg{
-  float: right;
-  margin: -150px 90px 0px 0px;
-  width: 340px;
-  height: 200px;
-}
+
 
 .group2{
   display: flex;
@@ -676,7 +677,12 @@ a{color:inherit;text-decoration:none}
   }
 }
 
-
+.launch{
+  font-family: "segoe print";
+  display: flex;
+  text-align: center;
+  justify-content:center ;
+}
 
 
 
@@ -696,13 +702,15 @@ a{color:inherit;text-decoration:none}
   
       <div class="desktop-view">
        
-   <div >
-    <img  class="logoimg" src="NYSTAI LOGO TRANSPAPART  1024-1024 WBG COLOR.png" alt="">
-   </div>
+  
+        <img  class="logoimg" src="NYSTAI LOGO TRANSPAPART  1024-1024 WBG COLOR.png" alt="">
+   
  <div class="login-box">
      <div class="login-snip">
-       
-        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab"> GET IN TOUCH!!! 
+      <p class="launch text-center" >We are still working on stuff <br>
+      and will let you know<br> 
+      when our website launches... </p>
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab"> 
          
          </label>
         <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
@@ -710,7 +718,7 @@ a{color:inherit;text-decoration:none}
             <form name="submit-to-google-sheet">
             <div class="login">
                 <div class="group m-3">
-                    <label for="user" class="label m-2"><i class="fa fa-envelope "  style="margin-bottom: 8px;"></i>&nbsp;&nbsp; E-MAIL</label>
+                    <label for="user" class="label m-2" style="font-family: segoe print;"><i class="fa fa-envelope "  style="margin-bottom: 8px; "></i>&nbsp;&nbsp; E-MAIL</label>
                     <input
                    
                     name="email"
@@ -722,13 +730,14 @@ a{color:inherit;text-decoration:none}
                     <!-- <input id="user" type="text" class="input"  placeholder="Enter your e-mail " required> -->
                 </div>
                 <div class="group m-3">
-                    <label for="pass" class="label m-2"><i class="fa fa-phone "  style="margin-bottom: 8px;"></i>&nbsp;&nbsp;MOBILE NUMBER</label>
+                    <label for="pass" class="label m-2" style="font-family: segoe print;"><i class="fa fa-phone "  style="margin-bottom: 8px;"></i>&nbsp;&nbsp;MOBILE NUMBER</label>
                     <input
-                  
+
                     name="MobileNumber"
                     type="tel"
                     class=" form-control input"
-                   
+                 
+                   pattern="[6-9]{1}[0-9]{4}[0-9]{5}"
                     required
                   />
                     <!-- <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your mobile number" required> -->
@@ -744,7 +753,7 @@ a{color:inherit;text-decoration:none}
                       <span></span>
                       <span></span>
                       <button type="submit" class="btn" onclick="thank()">
-                      <label for="tab-2">Sent</label></button>
+                      <label for="tab-2" style="font-family: segoe print;">Sent</label></button>
                     </a>
            
 
@@ -758,15 +767,15 @@ a{color:inherit;text-decoration:none}
 
               
                   <p class="context ">  <i class="fa fa-phone "  style="margin-bottom: 8px;"></i><br>
-                         <span class="spanno"> 81899 77700</span>
+                         <span class="spanno" >+91 81899 77700</span>
                   </p>
                   
               </div>
               <hr>
               <div>
-                <p class="emailtext">
+                <p class="emailtext" style="font-family: segoe print;">
                   <i class="fa fa-envelope " style="margin-bottom: 8px;"></i><br>
-                  info@adhiba.outlook.com
+                  info@nystai.com
                 </p>
               </div>
           </div>
@@ -776,8 +785,8 @@ a{color:inherit;text-decoration:none}
           
            
             <div class="sign-up-form">
-                <h1 >THANK YOU!!!!</h1>
-                <P>Your e-mail is added to the list</P>
+                <h1  style="font-family: segoe print;">THANK YOU!!!!</h1>
+                <P style="font-family: segoe print;">Your e-mail is added to the list</P>
                 
                 
             </div>
@@ -806,45 +815,44 @@ a{color:inherit;text-decoration:none}
    
    
         </div>
-        <h3 class="launch text-center" >We are still working on stuff <br>
-          and will let you know<br> 
-          when our website launches... </h3>
-        <div class=" container">
+       
+        <div class=" container mt-4">
  
           <div class="screen mt-3">
              <div class="login-box screen__content">
-
+              <p class="launch text-center mt-4" style="font-family: segoe print;" >We are still working on stuff <br>
+                and will let you know<br> 
+                when our website launches... </p>
 
               <form name="submit-to-google-sheet2" class="login">
         
-                <div class="headin">
-                  <h6 style="color: #fff ; text-align: center;">GET IN TOUCH!!!</h6>
-                </div>
                 
+
+                <div class="login__field">
+                  <i class="login__icon fa fa-envelope"></i>
+                  <input
+                    name="email"
+                    type="email"
+                    style="font-family: segoe print;"
+                    class=" input login__input"
+                    placeholder="Email"
+                    required
+                    
+                  />
+             </div>
+  
                <div class="login__field">
-               <i class="login__icon fa fa-envelope"></i>
+               <i class="login__icon fa fa-phone"></i>
                   <input
                     name="MobileNumber"
                     type="tel"
                     class="  login__input"
+                    style="font-family: segoe print;"
                     placeholder="Mobile Number"
+                    pattern="[6-9]{1}[0-9]{4}[0-9]{5}"
                     required
                   />
                 </div>
-
-
-
-                <div class="login__field">
-                  <i class="login__icon fa fa-phone"></i>
-                  <input
-                    name="email"
-                    type="email"
-                    class=" input login__input"
-                    placeholder="Email"
-                    required
-                  />
-             </div>
-
 
                <div class="button login-box ">
                 <input type="hidden" name="formId2" value="form2" />
@@ -864,16 +872,16 @@ a{color:inherit;text-decoration:none}
 
 
               <div class="social-login" >
-                  <hr class="hr">
+                  <!-- <hr class="hr"> -->
                    <div class="social-icons">
 
-                    <label for="tab-1" class="tab mt-4"> 
+                    <label for="tab-1" class="tab mt-4" style="font-family: segoe print;"> 
                       <i class="fa fa-envelope " style="margin:10px 5px;"></i>
-                      info@adhiba.outlook.com
+                      info@nystai.com
                     </label>
                     <label for="tab-1" class="tab"> 
                       <i class="fa fa-phone " style="margin:10px 5px;"></i>
-                      81899 77700
+                     +91 81899 77700
                     </label>
                       
 
@@ -908,6 +916,10 @@ a{color:inherit;text-decoration:none}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
      function thank2(){
+      
+
+
+
         var scriptURL =
              "https://script.google.com/macros/s/AKfycbz-75HeXg_NbSnVb69tmJn2Ryfu1BTgpY_CO22uqzuGj-y7MwGBkaPdTTJqvoDEHGXi8w/exec";
 
@@ -924,7 +936,9 @@ a{color:inherit;text-decoration:none}
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
                 .then((response) => console.log("Success!", response))
                 .catch((error) => console.error("Error!", error.message));
-        });
+        }); 
+        alert("Your E-Mail is added our list")
+     alert("THANK YOU")
       }
 
         function thank(){
